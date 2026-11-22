@@ -1,7 +1,44 @@
 [
-  {"titulo":"SIU Guaraní","categoria":"tramites","descripcion":"Acceso al sistema de autogestión académica. Agregá aquí el enlace oficial verificado.","palabras_clave":"siu guarani inscripción materias finales","url":"","revisado":"","destacado":true,"publicado":true},
-  {"titulo":"Mesas de finales","categoria":"cursadas","descripcion":"Información sobre fechas e inscripción a exámenes. Pendiente de completar con el calendario oficial.","palabras_clave":"finales rendir exámenes mesas","url":"","revisado":"","destacado":true,"publicado":true},
-  {"titulo":"Boleto estudiantil","categoria":"bienestar","descripcion":"Dónde consultar los requisitos y cómo gestionar el beneficio.","palabras_clave":"colectivo micro sube transporte boleto","url":"","revisado":"","destacado":true,"publicado":true},
-  {"titulo":"Curso de ingreso","categoria":"ingreso","descripcion":"Información para quienes comienzan a estudiar en Exactas.","palabras_clave":"ingresantes inscripción nivelación ingreso","url":"","revisado":"","destacado":true,"publicado":true},
-  {"titulo":"Contactar a SUMA","categoria":"suma","descripcion":"Consultas y actividades de SUMA Exactas.","palabras_clave":"ayuda consulta contacto instagram","url":"https://www.instagram.com/suma_exactas/","revisado":"","destacado":false,"publicado":true}
+  {
+    "titulo": "SIU Guaraní",
+    "categoria": "tramites",
+    "descripcion": "Acceso al sistema de autogestión académica.",
+    "palabras_clave": "siu guarani inscripción materias finales",
+    "url": "https://autogestion.guarani.unlp.edu.ar/",
+    "destacado": true,
+    "publicado": true
+  },
+  {
+    "titulo": "Mesas de finales",
+    "categoria": "cursadas",
+    "descripcion": "Información sobre fechas e inscripción a exámenes. Pendiente de completar con el calendario oficial.",
+    "palabras_clave": "finales rendir exámenes mesas",
+    "destacado": true,
+    "publicado": true
+  },
+  {
+    "titulo": "Boleto estudiantil",
+    "categoria": "bienestar",
+    "descripcion": "Dónde consultar los requisitos y cómo gestionar el beneficio.",
+    "palabras_clave": "colectivo micro sube transporte boleto",
+    "destacado": true,
+    "publicado": true
+  },
+  {
+    "titulo": "Curso de ingreso",
+    "categoria": "ingreso",
+    "descripcion": "Información para quienes comienzan a estudiar en Exactas.",
+    "palabras_clave": "ingresantes inscripción nivelación ingreso",
+    "destacado": true,
+    "publicado": true
+  },
+  {
+    "titulo": "Contactar a SUMA",
+    "categoria": "suma",
+    "descripcion": "Consultas y actividades de SUMA Exactas.",
+    "palabras_clave": "ayuda consulta contacto instagram",
+    "url": "https://www.instagram.com/suma_exactas/",
+    "destacado": false,
+    "publicado": true
+  }
 ]
