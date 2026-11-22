@@ -1,0 +1,50 @@
+media:
+  input: assets/media
+  output: /assets/media
+content:
+  - name: identidad
+    label: Portada e identidad
+    type: file
+    path: contenido/sitio.json
+    format: json
+    fields:
+      - { name: titulo_portada, label: Título de la portada, type: string, required: true }
+      - { name: descripcion_portada, label: Texto de la portada, type: text }
+      - { name: instagram, label: Enlace a Instagram, type: string }
+  - name: recursos
+    label: Recursos y trámites
+    type: file
+    path: contenido/recursos.json
+    format: json
+    list: true
+    fields:
+      - { name: titulo, label: Título, type: string, required: true }
+      - name: categoria
+        label: Sección
+        type: select
+        required: true
+        options:
+          values:
+            - { value: ingreso, label: Ingreso }
+            - { value: cursadas, label: Carreras y cursadas }
+            - { value: tramites, label: Trámites }
+            - { value: bienestar, label: Vida universitaria }
+            - { value: suma, label: SUMA }
+      - { name: descripcion, label: Explicación breve, type: text }
+      - { name: palabras_clave, label: Palabras de búsqueda (separadas por espacios), type: text }
+      - { name: url, label: Enlace de destino, type: string }
+      - { name: revisado, label: Fecha de última revisión (AAAA-MM-DD), type: string }
+      - { name: destacado, label: Mostrar en accesos frecuentes, type: boolean }
+      - { name: publicado, label: Visible en la web, type: boolean }
+  - name: novedades
+    label: Novedades y avisos
+    type: file
+    path: contenido/novedades.json
+    format: json
+    list: true
+    fields:
+      - { name: titulo, label: Título, type: string, required: true }
+      - { name: descripcion, label: Texto de la novedad, type: text }
+      - { name: url, label: Enlace (opcional), type: string }
+      - { name: vencimiento, label: Fecha de vencimiento (AAAA-MM-DD, opcional), type: string }
+      - { name: publicado, label: Visible en la web, type: boolean }
