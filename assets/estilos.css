@@ -60,7 +60,7 @@ a {
 }
 
 .logo img {
-  height: 64px;
+  height: 70px;
   width: auto;
   display: block;
 }
@@ -97,13 +97,17 @@ nav a:hover,nav a:focus {
   background:#e8f8ec
 }
 
+/* PORTADA PRINCIPAL */
+
 .hero {
-  /* Conserva la opacidad anterior: 0.83 a la izquierda y 0.67 a la derecha. */
-  background:
-    linear-gradient(115deg, rgba(34, 166, 82, 0.83), rgba(24, 141, 69, 0.67)),
-    url("portada.jpg") center / cover no-repeat;
-  color:white;
-  padding:56px 0 62px
+  background: linear-gradient(
+    115deg,
+    #188D45,
+    #22A652
+  );
+
+  color: white;
+  padding: 56px 0 62px;
 }
 
 .eyebrow {
