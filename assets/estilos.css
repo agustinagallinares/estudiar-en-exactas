@@ -1,11 +1,13 @@
+/* Colores adaptados a la identidad de SUMA: verde #22A652 extraído de la imagen de referencia. */
+/* La imagen de portada debe estar en assets/portada.jpg. */
 /* SUMA Exactas — paleta verde. Para cambiar los colores principales, editá estas variables. */
 :root {
-  --verde-principal: #1f6b52;
-  --verde-secundario: #2f8b6d;
-  --verde-oscuro: #123328;
-  --verde-lima: #d8ef7a;
-  --fondo: #f5faf7;
-  --texto: #17352a;
+  --verde-principal: #22a652; /* Verde exacto de la gráfica de SUMA */
+  --verde-secundario: #188d45;
+  --verde-oscuro: #115b31;
+  --verde-lima: #bde5c5;
+  --fondo: #f5faf6;
+  --texto: #173725;
 }
 
 :root {
@@ -59,7 +61,7 @@ a {
 }
 
 .logo span {
-  color:#d8ef7a;
+  color:var(--verde-lima);
   margin-left:4px
 }
 
@@ -69,7 +71,7 @@ a {
   font-weight:650;
   letter-spacing:2px;
   margin-top:5px;
-  color:#d9efe3
+  color:#ddf5e4
 }
 
 .menu-button {
@@ -89,8 +91,8 @@ nav {
   padding:10px;
   border-radius:14px;
   background:white;
-  color:#153f33;
-  box-shadow:0 12px 30px #082a1b40
+  color:#145e32;
+  box-shadow:0 12px 30px #09432340
 }
 
 nav a {
@@ -101,27 +103,23 @@ nav a {
 }
 
 nav a:hover,nav a:focus {
-  background:#edf7f1
+  background:#e8f8ec
 }
 
 .hero {
+  /* Conserva la opacidad anterior: 0.83 a la izquierda y 0.67 a la derecha. */
   background:
-    linear-gradient(
-      115deg,
-      rgba(21, 63, 51, 0.83),
-      rgba(31, 107, 82, 0.67)
-    ),
+    linear-gradient(115deg, rgba(34, 166, 82, 0.83), rgba(24, 141, 69, 0.67)),
     url("portada.jpg") center / cover no-repeat;
-
-  color: white;
-  padding: 56px 0 62px;
+  color:white;
+  padding:56px 0 62px
 }
 
 .eyebrow {
   font-size:11px;
   font-weight:750;
   letter-spacing:2px;
-  color:#d8ef7a
+  color:var(--verde-lima)
 }
 
 .hero h1 {
@@ -144,12 +142,12 @@ nav a:hover,nav a:focus {
   margin-top:20px;
   background:white;
   color:#222;
-  box-shadow:0 6px 22px #12332835
+  box-shadow:0 6px 22px #105c3035
 }
 
 .hero .hint {
   font-size:12px;
-  color:#e5f4e9;
+  color:#e0f9e7;
   margin:12px 0 0
 }
 
@@ -158,7 +156,7 @@ nav a:hover,nav a:focus {
 }
 
 .section-heading p {
-  color:#61756b
+  color:#596d5e
 }
 
 .grid {
@@ -170,7 +168,7 @@ nav a:hover,nav a:focus {
 
 .tile,.resource {
   background:#fff;
-  border:1px solid #dbe9df;
+  border:1px solid #d9eadd;
   border-radius:14px;
   padding:22px;
   text-align:left;
@@ -179,8 +177,8 @@ nav a:hover,nav a:focus {
 }
 
 .tile:hover,.resource:hover {
-  border-color:#60a88b;
-  box-shadow:0 6px 16px #14563b16
+  border-color:#5ac17b;
+  box-shadow:0 6px 16px #14904416
 }
 
 .tile strong {
@@ -191,7 +189,7 @@ nav a:hover,nav a:focus {
 
 .tile span,.resource p {
   font-size:14px;
-  color:#607469;
+  color:#627165;
   line-height:1.5
 }
 
@@ -211,10 +209,10 @@ nav a:hover,nav a:focus {
 
 .pills button {
   padding:11px 14px;
-  border:1px solid #cfe3d8;
+  border:1px solid #cbe9d3;
   background:#fff;
   border-radius:100px;
-  color:#1f6b52
+  color:var(--verde-principal)
 }
 
 .results {
@@ -232,7 +230,7 @@ nav a:hover,nav a:focus {
 }
 
 .resource .meta {
-  color:#287657;
+  color:#168745;
   font-size:12px;
   letter-spacing:.3px;
   font-weight:700;
@@ -241,7 +239,7 @@ nav a:hover,nav a:focus {
 
 .resource a {
   display:inline-block;
-  color:#1f6b52;
+  color:var(--verde-principal);
   font-size:14px;
   margin-top:6px;
   font-weight:700
@@ -249,12 +247,12 @@ nav a:hover,nav a:focus {
 
 .resource .date {
   font-size:12px;
-  color:#607469
+  color:#627165
 }
 
 .back {
   border:0;
-  color:#1f6b52;
+  color:var(--verde-principal);
   background:transparent;
   padding:18px 0 0;
   font-weight:700
@@ -266,7 +264,7 @@ nav a:hover,nav a:focus {
 }
 
 #categoryDesc {
-  color:#607469
+  color:#627165
 }
 
 footer {
@@ -278,11 +276,11 @@ footer {
 
 footer p {
   font-size:13px;
-  color:#d5e7dd
+  color:#e0f4e5
 }
 
 footer a {
-  color:#d8ef7a
+  color:var(--verde-lima)
 }
 
 .sr-only {
