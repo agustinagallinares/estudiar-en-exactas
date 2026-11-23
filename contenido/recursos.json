@@ -49,5 +49,14 @@
     "url": "assets/planes/ambiental.pdf",
     "destacado": false,
     "publicado": true
+  },
+  {
+    "titulo": "Plan de estudios – Farmacia",
+    "categoria": "cursadas",
+    "descripcion": "Consultá y descargá el plan de estudios de Farmacia.",
+    "palabras_clave": "farmacia plan materias carrera",
+    "url": "assets/planes/farmacia.pdf",
+    "destacado": false,
+    "publicado": true
   }
 ]
