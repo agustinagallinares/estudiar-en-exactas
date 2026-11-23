@@ -446,3 +446,97 @@ $('logo').addEventListener('click', (event) => {
    ---------------------------------------------------------- */
 
 load();
+
+/* ==================================================
+   PLANES DE ESTUDIO
+   Organización especial de Carreras y cursadas
+   ================================================== */
+
+// Guardamos el funcionamiento original.
+const renderCategoryOriginal = renderCategory;
+
+// Extendemos la sección Carreras y cursadas.
+renderCategory = function (code) {
+
+  renderCategoryOriginal(code);
+
+  if (code !== "cursadas") return;
+
+  const contenedor = document.getElementById("categoryList");
+
+  // Reconocemos los planes cargados desde Pages CMS.
+  const esPlan = (recurso) => {
+    const titulo = norm(recurso.titulo);
+    const url = recurso.url || "";
+
+    return (
+      titulo.startsWith("plan de estudio") &&
+      /\.pdf(?:[?#].*)?$/i.test(url)
+    );
+  };
+
+  const recursos = items.filter(
+    (recurso) =>
+      recurso.publicado &&
+      recurso.categoria === "cursadas"
+  );
+
+  const planes = recursos
+    .filter(esPlan)
+    .sort((a, b) =>
+      a.titulo.localeCompare(b.titulo, "es")
+    );
+
+  const otros = recursos.filter(
+    (recurso) => !esPlan(recurso)
+  );
+
+  contenedor.replaceChildren();
+
+  // Apartado de planes de estudio.
+  const tituloPlanes = node("h3", "", "Planes de estudio");
+
+  const descripcion = node(
+    "p",
+    "",
+    "Seleccioná tu carrera para descargar el plan de estudios."
+  );
+
+  const listaPlanes = node("div", "lista-planes");
+
+  planes.forEach((plan) => {
+
+    const enlace = node("a", "plan-item");
+
+    enlace.href = plan.url;
+    enlace.download = "";
+
+    const nombre = (plan.titulo || "")
+      .replace(/^plan de estudios?\s*[-–—:]?\s*/i, "");
+
+    enlace.append(
+      node("span", "plan-nombre", nombre),
+      node("span", "plan-descarga", "↓ PDF")
+    );
+
+    listaPlanes.append(enlace);
+  });
+
+  contenedor.append(
+    tituloPlanes,
+    descripcion,
+    listaPlanes
+  );
+
+  // Apartado con los demás recursos.
+  if (otros.length > 0) {
+
+    contenedor.append(
+      node("h3", "otros-titulo", "Calendario académico")
+    );
+
+    otros.forEach((recurso) => {
+      contenedor.append(resourceCard(recurso));
+    });
+  }
+};
