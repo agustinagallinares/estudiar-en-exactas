@@ -42,20 +42,38 @@
     "publicado": true
   },
   {
-    "titulo": "Plan de estudios-Ambiental",
+    "titulo": "Química y Tecnología Ambiental.",
     "categoria": "cursadas",
-    "descripcion": "Consultá el plan de estudios de la carrera.",
+    "descripcion": "Consultá y descargá el plan de estudios de la licenciatura en Química y Tecnología Ambiental.",
     "palabras_clave": "Ambiental plan estudio",
     "url": "assets/planes/ambiental.pdf",
     "destacado": false,
     "publicado": true
   },
   {
-    "titulo": "Plan de estudios – Farmacia",
+    "titulo": "Farmacia",
     "categoria": "cursadas",
     "descripcion": "Consultá y descargá el plan de estudios de Farmacia.",
     "palabras_clave": "farmacia plan materias carrera",
     "url": "assets/planes/farmacia.pdf",
+    "destacado": false,
+    "publicado": true
+  },
+  {
+    "titulo": "Bioquímica",
+    "categoria": "cursadas",
+    "descripcion": "Consultá y descargá el plan de estudios de Bioquímica.",
+    "palabras_clave": "plan  estudios materias carrera",
+    "url": "assets/planes/bioquimica.pdf",
+    "destacado": false,
+    "publicado": true
+  },
+  {
+    "titulo": "Biotecnología y Biología Molecular",
+    "categoria": "cursadas",
+    "descripcion": "Consultá y descargá el plan de estudios de la licenciatura en Biotecnología y Biología Molecular.",
+    "palabras_clave": "plan  estudios materias carrera",
+    "url": "assets/planes/biotecnologia.pdf",
     "destacado": false,
     "publicado": true
   }
