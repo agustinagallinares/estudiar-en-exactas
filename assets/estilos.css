@@ -54,24 +54,15 @@ a {
 }
 
 .logo {
-  text-decoration:none;
-  font-size:29px;
-  font-weight:900;
-  line-height:1
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
-.logo span {
-  color:var(--verde-lima);
-  margin-left:4px
-}
-
-.logo small {
-  display:block;
-  font-size:10px;
-  font-weight:650;
-  letter-spacing:2px;
-  margin-top:5px;
-  color:#ddf5e4
+.logo img {
+  height: 56px;
+  width: auto;
+  display: block;
 }
 
 .menu-button {
