@@ -130,5 +130,23 @@
     "url": "assets/planes/optica.pdf",
     "destacado": false,
     "publicado": true
+  },
+  {
+    "titulo": "Tecnicatura en Alimentos",
+    "categoria": "cursadas",
+    "descripcion": "Consultá y descargá el plan de estudios de la tecnicatura en Alimentos.",
+    "palabras_clave": "plan  estudios materias alimentos",
+    "url": "assets/planes/tecnicatura-alimentos.pdf",
+    "destacado": false,
+    "publicado": true
+  },
+  {
+    "titulo": "Tecnicatura en Química",
+    "categoria": "cursadas",
+    "descripcion": "Consultá y descargá el plan de estudios de la tecnicatura en Química.",
+    "palabras_clave": "plan  estudios materias quimica",
+    "url": "assets/planes/tecnicatura-quimica.pdf",
+    "destacado": false,
+    "publicado": true
   }
 ]
