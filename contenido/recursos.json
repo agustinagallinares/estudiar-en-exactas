@@ -42,10 +42,10 @@
     "publicado": true
   },
   {
-    "titulo": "Química y Tecnología Ambiental.",
+    "titulo": "Química y Tecnología Ambiental",
     "categoria": "cursadas",
     "descripcion": "Consultá y descargá el plan de estudios de la licenciatura en Química y Tecnología Ambiental.",
-    "palabras_clave": "Ambiental plan estudio",
+    "palabras_clave": "plan estudios materias ambiental",
     "url": "assets/planes/ambiental.pdf",
     "destacado": false,
     "publicado": true
@@ -54,7 +54,7 @@
     "titulo": "Farmacia",
     "categoria": "cursadas",
     "descripcion": "Consultá y descargá el plan de estudios de Farmacia.",
-    "palabras_clave": "farmacia plan materias carrera",
+    "palabras_clave": "plan estudios materias farmacia",
     "url": "assets/planes/farmacia.pdf",
     "destacado": false,
     "publicado": true
@@ -63,7 +63,7 @@
     "titulo": "Bioquímica",
     "categoria": "cursadas",
     "descripcion": "Consultá y descargá el plan de estudios de Bioquímica.",
-    "palabras_clave": "plan  estudios materias carrera",
+    "palabras_clave": "plan  estudios materias bioquimica",
     "url": "assets/planes/bioquimica.pdf",
     "destacado": false,
     "publicado": true
@@ -72,8 +72,62 @@
     "titulo": "Biotecnología y Biología Molecular",
     "categoria": "cursadas",
     "descripcion": "Consultá y descargá el plan de estudios de la licenciatura en Biotecnología y Biología Molecular.",
-    "palabras_clave": "plan  estudios materias carrera",
+    "palabras_clave": "plan  estudios materias biotecnologia",
     "url": "assets/planes/biotecnologia.pdf",
+    "destacado": false,
+    "publicado": true
+  },
+  {
+    "titulo": "Ciencia y Tecnología de Alimentos",
+    "categoria": "cursadas",
+    "descripcion": "Consultá y descargá el plan de estudios de la licenciatura en Ciencia y Tecnología de Alimentos.",
+    "palabras_clave": "plan  estudios materias alimentos",
+    "url": "assets/planes/alimentos.pdf",
+    "destacado": false,
+    "publicado": true
+  },
+  {
+    "titulo": "Química",
+    "categoria": "cursadas",
+    "descripcion": "Consultá y descargá el plan de estudios de la licenciatura en Química.",
+    "palabras_clave": "plan  estudios materias quimica",
+    "url": "assets/planes/quimica.pdf",
+    "destacado": false,
+    "publicado": true
+  },
+  {
+    "titulo": "Física",
+    "categoria": "cursadas",
+    "descripcion": "Consultá y descargá el plan de estudios de la licenciatura en Física.",
+    "palabras_clave": "plan  estudios materias fisica",
+    "url": "assets/planes/fisica.pdf",
+    "destacado": false,
+    "publicado": true
+  },
+  {
+    "titulo": "Física Médica",
+    "categoria": "cursadas",
+    "descripcion": "Consultá y descargá el plan de estudios de la licenciatura en Física Médica.",
+    "palabras_clave": "plan  estudios materias fisica medica",
+    "url": "assets/planes/fisica-medica.pdf",
+    "destacado": false,
+    "publicado": true
+  },
+  {
+    "titulo": "Matemática",
+    "categoria": "cursadas",
+    "descripcion": "Consultá y descargá el plan de estudios de la licenciatura en Matemática.",
+    "palabras_clave": "plan  estudios materias matematica",
+    "url": "assets/planes/matematica.pdf",
+    "destacado": false,
+    "publicado": true
+  },
+  {
+    "titulo": "Óptica Ocular y Optometría",
+    "categoria": "cursadas",
+    "descripcion": "Consultá y descargá el plan de estudios de la licenciatura en Óptica Ocular y Optometría.",
+    "palabras_clave": "plan  estudios materias optica",
+    "url": "assets/planes/optica.pdf",
     "destacado": false,
     "publicado": true
   }
