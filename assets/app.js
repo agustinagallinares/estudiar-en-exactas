@@ -110,6 +110,24 @@ function resourceCard(resource) {
   return article;
 }
 
+/* ----------------------------------------------------------
+   VOLVER A LA PORTADA
+   ---------------------------------------------------------- */
+
+function renderHome() {
+  selected = null;
+
+  $('categoryArea').hidden = true;
+  $('searchArea').hidden = true;
+  $('homeArea').hidden = false;
+
+  $('search').value = '';
+
+  if (location.hash !== '#inicio') {
+    location.hash = 'inicio';
+  }
+}
+
 
 /* ==========================================
    CATEGORÍAS DEL PORTAL
