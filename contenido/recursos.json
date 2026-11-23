@@ -40,5 +40,14 @@
     "url": "https://www.instagram.com/suma_exactas/",
     "destacado": false,
     "publicado": true
+  },
+  {
+    "titulo": "Plan de estudios-Ambiental",
+    "categoria": "cursadas",
+    "descripcion": "Consultá el plan de estudios de la carrera.",
+    "palabras_clave": "Ambiental plan estudio",
+    "url": "assets/planes/ambiental.pdf",
+    "destacado": false,
+    "publicado": true
   }
 ]
