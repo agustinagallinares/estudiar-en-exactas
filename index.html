@@ -1,1 +1,117 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#4a239c"><title>SUMA Exactas · Portal estudiantil</title><link rel="stylesheet" href="assets/estilos.css"></head><body><header class="top"><a href="#inicio" class="logo" id="logo">SUMA<span>✳</span><small>EXACTAS · UNLP</small></a><button id="menuBtn" aria-expanded="false" aria-controls="menu" class="menu-button">☰ Menú</button><nav id="menu" hidden aria-label="Navegación principal"></nav></header><main><section class="hero"><div class="wrap"><p class="eyebrow">INFORMACIÓN ESTUDIANTIL · EXACTAS UNLP</p><h1 id="heroTitle">Todo Exactas, en un solo lugar.</h1><p id="heroDesc">Encontrá información para organizar tu vida universitaria.</p><label for="search" class="sr-only">Buscar información</label><input id="search" autocomplete="off" placeholder="¿Qué necesitás encontrar? Ej.: boleto, finales…"><p class="hint">Buscá por tema o por palabras como “micro”, “regularidad” o “rendír”.</p></div></section><div class="wrap"><section id="searchArea" hidden><h2>Resultados de búsqueda</h2><div id="results" class="results"></div></section><section id="homeArea"><div class="section-heading"><h2>Explorá el portal</h2><p>Elegí una categoría para empezar.</p></div><div id="categories" class="grid"></div><section class="quick"><h2>Accesos frecuentes</h2><div id="quickLinks" class="pills"></div></section><section class="news"><h2>Información y novedades</h2><div id="news" class="results"></div></section></section><section id="categoryArea" hidden><button class="back" id="back">← Volver al inicio</button><h2 id="categoryTitle"></h2><p id="categoryDesc"></p><div id="categoryList" class="results"></div></section></div></main><footer><div class="wrap"><b>SUMA Exactas</b><p>Espacio estudiantil · Facultad de Ciencias Exactas · UNLP</p><p>Este portal no reemplaza la información de los canales oficiales de la Facultad.</p><a id="instagram" target="_blank" rel="noopener noreferrer">Instagram de SUMA ↗</a></div></footer><script src="assets/app.js" defer></script></body></html>
+<!doctype html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="#4a239c" name="theme-color"/>
+  <title>
+   SUMA Exactas · Portal estudiantil
+  </title>
+  <link href="assets/estilos.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="top">
+   <a class="logo" href="#inicio" id="logo">
+    SUMA
+    <span>
+     ✳
+    </span>
+    <small>
+     EXACTAS · UNLP
+    </small>
+   </a>
+   <button aria-controls="menu" aria-expanded="false" class="menu-button" id="menuBtn">
+    ☰ Menú
+   </button>
+   <nav aria-label="Navegación principal" hidden="" id="menu">
+   </nav>
+  </header>
+  <main>
+   <section class="hero">
+    <div class="wrap">
+     <p class="eyebrow">
+      INFORMACIÓN ESTUDIANTIL · EXACTAS UNLP
+     </p>
+     <h1 id="heroTitle">
+      Todo Exactas, en un solo lugar.
+     </h1>
+     <p id="heroDesc">
+      Encontrá información para organizar tu vida universitaria.
+     </p>
+     <label class="sr-only" for="search">
+      Buscar información
+     </label>
+     <input autocomplete="off" id="search" placeholder="¿Qué necesitás encontrar? Ej.: boleto, finales…"/>
+     <p class="hint">
+      Buscá por tema o por palabras como “micro”, “regularidad” o “rendír”.
+     </p>
+    </div>
+   </section>
+   <div class="wrap">
+    <section hidden="" id="searchArea">
+     <h2>
+      Resultados de búsqueda
+     </h2>
+     <div class="results" id="results">
+     </div>
+    </section>
+    <section id="homeArea">
+     <div class="section-heading">
+      <h2>
+       Explorá el portal
+      </h2>
+      <p>
+       Elegí una categoría para empezar.
+      </p>
+     </div>
+     <div class="grid" id="categories">
+     </div>
+     <section class="quick">
+      <h2>
+       Accesos frecuentes
+      </h2>
+      <div class="pills" id="quickLinks">
+      </div>
+     </section>
+     <section class="news">
+      <h2>
+       Información y novedades
+      </h2>
+      <div class="results" id="news">
+      </div>
+     </section>
+    </section>
+    <section hidden="" id="categoryArea">
+     <button class="back" id="back">
+      ← Volver al inicio
+     </button>
+     <h2 id="categoryTitle">
+     </h2>
+     <p id="categoryDesc">
+     </p>
+     <div class="results" id="categoryList">
+     </div>
+    </section>
+   </div>
+  </main>
+  <footer>
+   <div class="wrap">
+    <b>
+     SUMA Exactas
+    </b>
+    <p>
+     Espacio estudiantil · Facultad de Ciencias Exactas · UNLP
+    </p>
+    <p>
+     Este portal no reemplaza la información de los canales oficiales de la Facultad.
+    </p>
+    <a id="instagram" rel="noopener noreferrer" target="_blank">
+     Instagram de SUMA ↗
+    </a>
+   </div>
+  </footer>
+  <script defer="" src="assets/app.js">
+  </script>
+ </body>
+</html>
+
