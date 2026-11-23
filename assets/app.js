@@ -110,40 +110,141 @@ function resourceCard(resource) {
   return article;
 }
 
-/* ----------------------------------------------------------
-   NAVEGACIÓN
-   ---------------------------------------------------------- */
 
-function renderHome() {
-  selected = null;
+/* ==========================================
+   CATEGORÍAS DEL PORTAL
+   ========================================== */
 
-  $('categoryArea').hidden = true;
-  $('homeArea').hidden = false;
+function renderCategory(code) {
+
+  selected = code;
+
+  const category = categories.find(
+    (c) => c[0] === code
+  );
+
+  if (!category) return;
+
+  $('categoryTitle').textContent = category[2];
+  $('categoryDesc').textContent = category[3];
+
+  const contenedor = $('categoryList');
+  contenedor.replaceChildren();
+
+  const recursos = items.filter(
+    (item) =>
+      item.publicado &&
+      item.categoria === code
+  );
+
+  // Organización especial de Carreras y cursadas
+
+  if (code === 'cursadas') {
+
+    // Identificamos los planes por la carpeta
+    // donde están guardados los PDF.
+
+    const esPlan = (item) =>
+      String(item.url || '')
+        .includes('assets/planes/');
+
+    const planes = recursos
+      .filter(esPlan)
+      .sort((a, b) =>
+        a.titulo.localeCompare(b.titulo, 'es')
+      );
+
+    const calendario = recursos.filter(
+      (item) => !esPlan(item)
+    );
+
+    // PLANES DE ESTUDIO
+
+    contenedor.append(
+      node('h3', '', 'Planes de estudio'),
+      node(
+        'p',
+        '',
+        'Seleccioná tu carrera para descargar el PDF.'
+      )
+    );
+
+    const lista = node('div', 'lista-planes');
+
+    planes.forEach((plan) => {
+
+      const enlace = node('a', 'plan-item');
+
+      enlace.href = plan.url;
+      enlace.download = '';
+
+      enlace.append(
+        node('span', 'plan-nombre', plan.titulo),
+        node('span', 'plan-descarga', '↓ PDF')
+      );
+
+      lista.append(enlace);
+
+    });
+
+    contenedor.append(lista);
+
+    // CALENDARIO ACADÉMICO
+
+    contenedor.append(
+      node('h3', 'otros-titulo', 'Calendario académico')
+    );
+
+    calendario.forEach((item) => {
+      contenedor.append(resourceCard(item));
+    });
+
+    if (calendario.length === 0) {
+      contenedor.append(
+        node(
+          'p',
+          '',
+          'Próximamente, información del calendario académico.'
+        )
+      );
+    }
+
+  } else {
+
+    // Todas las demás secciones siguen igual.
+
+    recursos.forEach((item) => {
+      contenedor.append(resourceCard(item));
+    });
+
+    if (recursos.length === 0) {
+      contenedor.append(
+        node(
+          'p',
+          '',
+          'Todavía no hay recursos publicados.'
+        )
+      );
+    }
+
+  }
+
+  // Mostrar la sección seleccionada.
+
+  $('homeArea').hidden = true;
   $('searchArea').hidden = true;
+  $('categoryArea').hidden = false;
 
   $('search').value = '';
 
-  location.hash = 'inicio';
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+
+  location.hash = code;
 }
 
-function renderCategory(code) {
-  const matching = items.filter(
-  (item) => item.publicado && item.categoria === code
-);
-
-$('categoryList').replaceChildren(
-  ...matching.map(resourceCard)
-);
-
-if (!$('categoryList').children.length) {
-  $('categoryList').append(
-    node(
-      'p',
-      '',
-      'Todavía no hay recursos publicados en esta sección.'
-    )
-  );
-}
 /* ----------------------------------------------------------
    BUSCADOR
    ---------------------------------------------------------- */
