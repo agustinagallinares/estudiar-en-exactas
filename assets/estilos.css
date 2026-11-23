@@ -450,3 +450,56 @@ footer a {
     padding: 16px;
   }
 }
+
+
+/* ==========================================
+   IDENTIDAD VISUAL SUMA
+   Degradados verdes suaves
+   ========================================== */
+
+/* BARRA SUPERIOR: LOGO Y MENÚ */
+
+.top {
+  background: linear-gradient(
+    110deg,
+    #174C37 0%,
+    #246B4B 100%
+  );
+}
+
+/* PORTADA: TÍTULO Y BUSCADOR */
+
+.hero {
+  background: linear-gradient(
+    115deg,
+    #287650 0%,
+    #32875C 55%,
+    #399669 100%
+  );
+}
+
+/* TEXTOS SECUNDARIOS DE PORTADA */
+
+.eyebrow {
+  color: #E4F2D2;
+}
+
+.hero .hint {
+  color: #E6F3EA;
+}
+
+/* FONDO GENERAL */
+
+:root {
+  background: #F5F8F5;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+  background: linear-gradient(
+    110deg,
+    #173D2D 0%,
+    #23573F 100%
+  );
+}
