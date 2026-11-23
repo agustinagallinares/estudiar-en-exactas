@@ -48,3 +48,42 @@ content:
       - { name: url, label: Enlace (opcional), type: string }
       - { name: vencimiento, label: Fecha de vencimiento (AAAA-MM-DD, opcional), type: string }
       - { name: publicado, label: Visible en la web, type: boolean }
+      
+  # ==========================================
+  # PUBLICACIONES DE INSTAGRAM
+  # ==========================================
+
+  - name: instagram
+    label: Publicaciones de Instagram
+    type: file
+    path: contenido/instagram.json
+    format: json
+    list: true
+
+    fields:
+      - name: titulo
+        label: Título de la publicación
+        type: string
+        required: true
+
+      - name: imagen
+        label: Imagen de portada
+        type: image
+        required: true
+
+      - name: url
+        label: Enlace al post de Instagram
+        type: string
+        required: true
+
+      - name: fecha
+        label: Fecha de publicación
+        type: date
+        options:
+          format: yyyy-MM-dd
+
+      - name: publicado
+        label: Mostrar en la web
+        type: boolean
+        default: true
+
